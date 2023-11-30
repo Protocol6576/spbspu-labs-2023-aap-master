@@ -1,11 +1,10 @@
 #include "sequence.hpp"
 
-
 likhachev::SequenceLocalMaxCount::SequenceLocalMaxCount():
   currValue(0),
   count(0),
-  localMaxCount(0),
-  localMax(std::numeric_limits< int >::min())
+  localMax(std::numeric_limits< int >::min()),
+  localMaxCount(0)
 {}
 
 void likhachev::SequenceLocalMaxCount::operator()(int newNumber)
